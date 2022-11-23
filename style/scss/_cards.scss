@@ -1,0 +1,17 @@
+.card{
+    padding: 5px;
+    width:270px;
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 20px;
+
+    .thumbnail{
+        
+        height: fit-content;
+        
+    }
+    .title{
+        font-size: large;
+    }
+    
+}

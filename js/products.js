@@ -41,11 +41,11 @@ function myProducts(){
             price.innerHTML = item.price;
 
 
-            card.appendChild(title)
-            card.appendChild(thumb)
-            card.appendChild(description)
-            card.appendChild(price)
             divProducts.appendChild(card);
+            card.appendChild(thumb)
+            card.appendChild(title)
+            card.appendChild(price)
+            card.appendChild(description)
 
         })
 

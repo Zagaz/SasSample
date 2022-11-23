@@ -1,17 +1,148 @@
-.card{
-    padding: 5px;
-    width:270px;
-    color: black;
-    border: 1px solid black;
-    margin-bottom: 20px;
+@mixin card($width, $mr){
+	width: $width;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: $mr;
 
-    .thumbnail{
-        
-        height: fit-content;
-        
-    }
-    .title{
-        font-size: large;
-    }
-    
 }
+@mixin cardTitle($fsize,$fweight ) {
+	font-size: $fsize;
+	font-weight: $fweight;
+	font-family: Arial, Helvetica, sans-serif;	
+	
+}
+
+@mixin cardPrice($color,$fsize) {
+	font-size: $fsize;
+	color: $color;
+	
+}
+@mixin thumbnail($height){
+	min-height: $height ;
+	//width: fit-content;
+}
+
+
+.card{
+    
+	border:none;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: darkslategrey;
+	
+}
+
+	@media (min-width : 0px){
+			.title{
+				@include cardTitle(20px, bolder);
+
+			}
+			.card{
+				@include card(98vw, 0px);
+		
+			}
+			.price{
+				@include cardPrice(red , 30px);
+			
+			}
+		
+		} 
+
+		@media (min-width : 300px){
+			.title{
+				@include cardTitle(30px, bolder);
+
+			}
+			.card{
+				@include card(98vw, 0px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+		
+		} 
+		@media (min-width : 500px){
+			.title{
+				@include cardTitle(35px, bolder);
+
+			}
+			.card{
+				@include card(98vw, 0px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+			
+		} 
+		@media (min-width : 700px){
+			.title{
+				@include cardTitle(30px, bolder);
+
+			}
+			.card{
+				@include card(45vw, 20px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+		} 
+		@media (min-width : 1400px){
+			.title{
+				@include cardTitle(20px, bolder);
+
+			}
+			.card{
+				@include card(22vw, 20px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+			.thumbnail{
+
+			}
+		} 
+		@media (min-width : 1800px){
+			.title{
+				@include cardTitle(35px, bolder);
+
+			}
+			.card{
+				@include card(22vw, 20px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+		} 
+
+		@media (min-width : 2400px){
+			.title{
+				@include cardTitle(35px, bolder);
+
+			}
+			.card{
+				@include card(15vw, 20px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+		} 
+		
+		
+		
+		
+	
+
+		

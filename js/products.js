@@ -2,11 +2,11 @@
     myProducts();
 function myProducts(){
 
-    const url = "https://dummyjson.com/products?limit=12";
+    const url = "https://fakestoreapi.com/products";
     
     fetch(url)
       .then(response => response.json())
-      .then(data => data['products'])
+      //.then(data => data['products'])
       .then (data =>{
         const divProducts = document.querySelector("#products");
 
@@ -15,11 +15,28 @@ function myProducts(){
             card = document.createElement("div");
             card.setAttribute ('id' ,"card_" + item.id)
             card.setAttribute ('class' , "card")
+
+            //card-image-Container
+            imageContainer = document.createElement("div");
+            imageContainer.setAttribute ('class' , "image-container")
+            
             //Thumb
             thumb = document.createElement ("img");
             thumb.setAttribute ('id' , "img_" + item.id)
-            thumb.setAttribute ('src' , item.thumbnail)
-            thumb.setAttribute ('class' , "thumbnail")
+            thumb.setAttribute ('src' , item.image)
+            thumb.setAttribute ('class' , "thumbnail img-fluid rounded thumbnail-image")
+
+            //product-detail-container
+
+            card = document.createElement("div");
+            card.setAttribute ('id' ,"card_" + item.id)
+            card.setAttribute ('class' , "card")
+
+
+
+
+
+
             
 
             // Title
@@ -42,10 +59,13 @@ function myProducts(){
 
 
             divProducts.appendChild(card);
+            card.appendChild(imageContainer)
+
+          
             card.appendChild(thumb)
             card.appendChild(title)
             card.appendChild(price)
-            card.appendChild(description)
+            //card.appendChild(description)
 
         })
 

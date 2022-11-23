@@ -2,8 +2,9 @@
     background-color: white;
     display: flex;
     flex-flow : row wrap;
-    justify-content: start;
-    align-items: space-between;
-    padding: 30px;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+    
     
 }

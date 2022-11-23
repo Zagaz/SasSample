@@ -64,6 +64,8 @@
 			}
 		
 		} 
+
+		
 		@media (min-width : 500px){
 			.title{
 				@include cardTitle(35px, bolder);
@@ -93,13 +95,27 @@
 			
 			}
 		} 
-		@media (min-width : 1400px){
+		@media (min-width : 950px){
+			.title{
+				@include cardTitle(30px, bolder);
+
+			}
+			.card{
+				@include card(30vw, 20px);
+		
+			}
+			.price{
+				@include cardPrice(red , 50px);
+			
+			}
+		} 
+		@media (min-width : 1200px){
 			.title{
 				@include cardTitle(20px, bolder);
 
 			}
 			.card{
-				@include card(22vw, 20px);
+				@include card(15vw, 20px);
 		
 			}
 			.price{
@@ -112,11 +128,11 @@
 		} 
 		@media (min-width : 1800px){
 			.title{
-				@include cardTitle(35px, bolder);
+				@include cardTitle(25px, bolder);
 
 			}
 			.card{
-				@include card(22vw, 20px);
+				@include card(18vw, 20px);
 		
 			}
 			.price{
@@ -127,7 +143,7 @@
 
 		@media (min-width : 2400px){
 			.title{
-				@include cardTitle(35px, bolder);
+				@include cardTitle(025px, bolder);
 
 			}
 			.card{

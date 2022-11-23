@@ -109,7 +109,7 @@
   background-color: white;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
 }
@@ -193,14 +193,32 @@
     color: red;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 950px) {
+  .title {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .card {
+    width: 30vw;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .price {
+    font-size: 50px;
+    color: red;
+  }
+}
+@media (min-width: 1200px) {
   .title {
     font-size: 20px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
   }
   .card {
-    width: 22vw;
+    width: 15vw;
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -213,12 +231,12 @@
 }
 @media (min-width: 1800px) {
   .title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
   }
   .card {
-    width: 22vw;
+    width: 18vw;
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -231,7 +249,7 @@
 }
 @media (min-width: 2400px) {
   .title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -270,7 +288,12 @@ a {
 .showcase {
   background-color: #0e6cff;
   color: #fff;
-  height: 600px;
+  height: 550px;
+}
+.showcase #hero {
+  transform: scaleX(-1);
+  z-index: 1;
+  margin-top: 20px;
 }
 .showcase nav {
   display: flex;

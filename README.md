@@ -1,10 +1,11 @@
-# SasSample
-This small project will demonstrate my skills with:
+# Goal
 
-  * Vanilla JavaScript;
-  * Sass;
-  * Fetch API;
-  * Flexbox
+The goal here is to demonstrate my skills using:
+
+* Use API's.
+* Use SASS for styling;
+* Flexbox;
+* Vanilla JavaScript
   
 
 # Work in Progress

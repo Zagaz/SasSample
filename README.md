@@ -6,6 +6,10 @@ The goal here is to demonstrate my skills using:
 * Use SASS for styling;
 * Flexbox;
 * Vanilla JavaScript
+
+# Goal
+
+Check out the live demo: [SasSample](https://zagaz.github.io/SasSample/ "SasSample")
   
 
 # Work in Progress

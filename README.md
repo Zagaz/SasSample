@@ -10,8 +10,7 @@ The goal here is to demonstrate my skills using:
 # Goal
 
 Check out the live demo: [SasSample](https://zagaz.github.io/SasSample/ "SasSample")
-  
-
+ 
 # Work in Progress
 
 ![alt text][logo]

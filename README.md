@@ -3,9 +3,10 @@
 The goal here is to demonstrate my skills using:
 
 * Use API's.
-* Use SASS for styling;
+* Use SASS for styling and Responsivity;
 * Flexbox;
-* Vanilla JavaScript
+* Vanilla JavaScript;
+
 
 # Goal
 

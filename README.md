@@ -3,7 +3,7 @@
 The goal here is to demonstrate my skills using:
 
 * Use API's.
-* Use SASS for styling and Responsivity;
+* Use SASS for Styling and Responsivity (Media queries);
 * Flexbox;
 * Vanilla JavaScript;
 

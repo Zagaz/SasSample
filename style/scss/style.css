@@ -130,33 +130,244 @@
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  height: 340px;
-  margin: 10px 10px 10px 10px;
 }
-.itemContainer .thumbnail {
-  margin-top: 18px;
-  height: 100px;
-  width: auto;
-}
-.itemContainer .title {
+
+.title {
   font-size: large;
   color: rgb(22, 11, 8);
   padding: 10px 18px 0px 18px;
+  --max-lines: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
 }
-.itemContainer .priceContainer {
+
+.priceContainer {
   background-color: cornflowerblue;
   border-radius: 0px 0px 10px 10px;
+  width: 100%;
 }
-.itemContainer .priceContainer .price {
+.priceContainer .price {
   color: white;
 }
 
-@media (max-width: 300px) {
+@media (min-width: 0px) {
   .itemContainer {
+    margin: 15px;
     width: 95vw;
+    min-height: 120vw;
+  }
+  .thumbnail {
+    padding-top: 25px;
+    width: auto;
+    height: 50vw;
   }
   .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 300px) {
+  .itemContainer {
+    margin: 15px;
     width: 95vw;
+    min-height: 120vw;
+  }
+  .thumbnail {
+    padding-top: 25px;
+    width: auto;
+    height: 50vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+.priceContainer {
+  background-color: cornflowerblue;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+}
+.priceContainer .price {
+  color: white;
+}
+
+@media (min-width: 0px) {
+  .itemContainer {
+    margin: 15px;
+    width: 95vw;
+    min-height: 120vw;
+  }
+  .thumbnail {
+    padding-top: 25px;
+    width: auto;
+    height: 50vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 350px) {
+  .itemContainer {
+    margin: 20px;
+    width: 95vw;
+    min-height: 120vw;
+  }
+  .thumbnail {
+    padding-top: 25px;
+    width: auto;
+    height: 52vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 445px) {
+  .itemContainer {
+    margin: 20px;
+    width: 95vw;
+    min-height: 100vw;
+  }
+  .thumbnail {
+    padding-top: 25px;
+    width: auto;
+    height: 52vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 480px) {
+  .itemContainer {
+    margin: 20px;
+    width: 95vw;
+    min-height: 100vw;
+  }
+  .thumbnail {
+    padding-top: 30px;
+    width: auto;
+    height: 45vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 600px) {
+  .itemContainer {
+    margin: 20px 10px 0px 10px;
+    width: 45vw;
+    min-height: 50vw;
+  }
+  .thumbnail {
+    padding-top: 30px;
+    width: auto;
+    height: 20vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1280px) {
+  .itemContainer {
+    margin: 20px 10px 0px 10px;
+    width: 20vw;
+    min-height: 30vw;
+  }
+  .thumbnail {
+    padding-top: 30px;
+    width: auto;
+    height: 10vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1366px) {
+  .itemContainer {
+    margin: 20px 10px 0px 10px;
+    width: 20vw;
+    min-height: 25vw;
+  }
+  .thumbnail {
+    padding-top: 30px;
+    width: auto;
+    height: 10vw;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1920px) {
+  .itemContainer {
+    margin: 20px 10px 0px 10px;
+    width: 15vw;
+    min-height: 22vw;
+  }
+  .thumbnail {
+    padding-top: 30px;
+    width: auto;
+    height: 10rem;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 2560px) {
+  .itemContainer {
+    margin: 20px 10px 0px 10px;
+    width: 10vw;
+    min-height: 15vw;
+  }
+  .thumbnail {
+    padding-top: 30px;
+    width: auto;
+    height: 9rem;
+  }
+  .priceContainer {
+    width: 100%;
+  }
+  .price {
+    padding: 15px;
+    font-size: 25px;
   }
 }
 * {

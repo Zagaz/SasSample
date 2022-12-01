@@ -3,31 +3,29 @@
 
 // }
 
-@mixin cardCard ($width, $height) {
+@mixin itemContainer ($margin, $width, $height) {
+    margin: $margin;
     width: $width;
-    height: $height;
-
+    min-height: $height;
 }
 
-@mixin cardThumb($height, $width) {
-    height: $height;
+@mixin thumbnail ($padding, $width, $height) {
+    padding-top: $padding;
     width: $width;
-
+    height: $height;
 }
 
-@mixin cardTitlePrice($fsize, $fweight, $txtalign, $padding) {
-    font-size: $fsize;
-    font-weight: $fweight;
-    text-align: $txtalign;
+@mixin priceContainer ($width) {
+    width: $width;
+}
+
+@mixin price ($padding, $fsize) {
     padding: $padding;
+    font-size: $fsize;
 }
 
 
 
-// .card {
-
-
-// }
 .itemContainer {
     border: none;
     border-radius: 10px;
@@ -38,42 +36,310 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    //Var    
-    //width: 200px;
-    height: 340px;
-    margin: 10px 10px 10px 10px;
-    
-    .thumbnail {
-        margin-top: 18px;
-        height: 100px;
-        width: auto;
-    }
+}
 
-    .title {
-        font-size: large;
-        color: rgb(22, 11, 8);
-        padding: 10px 18px 0px 18px;
-    }
-    .priceContainer{
-        //var
-       
+.title {
+    font-size: large;
+    color: rgb(22, 11, 8);
+    padding: 10px 18px 0px 18px;
+    //Keeps maximum 2 lines description
+    --max-lines: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
 
-        background-color: cornflowerblue;
-        border-radius: 0px 0px 10px 10px;
-        .price{
-            color: white;
-        }
+}
+
+
+.priceContainer {
+    //var
+    background-color: cornflowerblue;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+
+    .price {
+        color: white;
     }
 }
-@media  (max-width : 300px )  {
-    .itemContainer{
-        width: 95vw;
+
+
+@media (min-width : 0px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(15px, 95vw, 120vw);
     }
-    .priceContainer{
-        width: 95vw;
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(25px, auto, 50vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+        //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+    }
+}
+
+@media (min-width : 300px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(15px, 95vw, 120vw);
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(25px, auto, 50vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
 
     }
-  
-  }
+}
+
+.priceContainer {
+    //var
+    background-color: cornflowerblue;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+
+    .price {
+        color: white;
+    }
+}
 
 
+@media (min-width : 0px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(15px, 95vw, 120vw);
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(25px, auto, 50vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+        //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+    }
+}
+
+@media (min-width : 350px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px, 95vw, 120vw);
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(25px, auto, 52vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+
+@media (min-width : 445px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px, 95vw, 100vw);
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(25px, auto, 52vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+
+//===================
+@media (min-width : 480px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px, 95vw, 100vw);
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(30px, auto, 45vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+//===================
+@media (min-width : 600px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px 10px 0px 10px, 45vw, 50vw);
+      
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(30px, auto, 20vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+//===================
+@media (min-width : 1280px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px 10px 0px 10px, 20vw, 30vw);
+      
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(30px, auto, 10vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+//===================
+@media (min-width : 1366px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px 10px 0px 10px, 20vw, 25vw);
+      
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(30px, auto, 10vw);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+//===================
+@media (min-width : 1920px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px 10px 0px 10px, 15vw, 22vw);
+      
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(30px, auto, 10rem);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}
+//===================
+@media (min-width : 2560px) {
+
+    .itemContainer {
+        //@mixin itemContainer ($margin, $width, $height)
+        @include itemContainer(20px 10px 0px 10px, 10vw, 15vw);
+      
+    }
+
+    .thumbnail {
+        //@mixin thumbnail ($padding, $width, $height)
+        @include thumbnail(30px, auto, 9rem);
+    }
+
+    .priceContainer {
+        //@mixin priceContainer ($width)
+        @include priceContainer(100%);
+    }
+
+    .price {
+         //@mixin price ($padding, $fontSize)
+        @include price(15px,25px);
+
+    }
+}

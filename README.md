@@ -8,7 +8,7 @@ The goal here is to demonstrate my skills using:
 * Vanilla JavaScript;
 
 
-# Goal
+# Live Demo
 
 Check out the live demo: [SasSample](https://zagaz.github.io/SasSample/ "SasSample")
  

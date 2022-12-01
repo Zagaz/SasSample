@@ -105,166 +105,54 @@
   color: #fff;
 }
 
-#products {
+#showcaseProducts {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#showcaseProducts #products {
   background-color: white;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.card {
+.itemContainer {
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: darkslategrey;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 340px;
+  margin: 10px 10px 10px 10px;
+}
+.itemContainer .thumbnail {
+  margin-top: 18px;
+  height: 100px;
+  width: auto;
+}
+.itemContainer .title {
+  font-size: large;
+  color: rgb(22, 11, 8);
+  padding: 10px 18px 0px 18px;
+}
+.itemContainer .priceContainer {
+  width: 200px;
+  background-color: cornflowerblue;
+  border-radius: 0px 0px 10px 10px;
+}
+.itemContainer .priceContainer .price {
+  color: white;
 }
 
-@media (min-width: 0px) {
-  .title {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 98vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-  .price {
-    font-size: 30px;
-    color: red;
-  }
-}
-@media (min-width: 300px) {
-  .title {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 98vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
-@media (min-width: 500px) {
-  .title {
-    font-size: 35px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 98vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
-@media (min-width: 700px) {
-  .title {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 45vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
-@media (min-width: 950px) {
-  .title {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 30vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
-@media (min-width: 1200px) {
-  .title {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 15vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
-@media (min-width: 1800px) {
-  .title {
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 18vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
-@media (min-width: 2400px) {
-  .title {
-    font-size: 25px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .card {
-    width: 15vw;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-  }
-  .price {
-    font-size: 50px;
-    color: red;
-  }
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -272,7 +160,6 @@
 }
 
 body {
-  background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }

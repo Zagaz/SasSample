@@ -38,17 +38,11 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-
-    width: 200px;
+    //Var    
+    //width: 200px;
     height: 340px;
-    
-    
     margin: 10px 10px 10px 10px;
     
-   
- 
-
-
     .thumbnail {
         margin-top: 18px;
         height: 100px;
@@ -61,15 +55,25 @@
         padding: 10px 18px 0px 18px;
     }
     .priceContainer{
-        width: 200px;
+        //var
+       
+
         background-color: cornflowerblue;
         border-radius: 0px 0px 10px 10px;
         .price{
             color: white;
         }
     }
-
-
-
-
 }
+@media  (max-width : 300px )  {
+    .itemContainer{
+        width: 95vw;
+    }
+    .priceContainer{
+        width: 95vw;
+
+    }
+  
+  }
+
+

@@ -10,42 +10,50 @@
 </head>
 <body>
     <script src="js/products.js"> </script>
-    <script src="js/imageheight.js">
-     </script>
- 
-   
-<header class="showcase">
-    <div class="container">
-        <nav>
-            <h1 class="logo">My Awesome Sass Website</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
+    
+    <header class="showcase">
+        <div class="container">
+            
+            <nav>
+                <h1 class="logo">My Responsive Sass Website</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
         </nav>
-
+        
         <div class="showcase-content">
             <div>
-                <h1>Sunt cillum officia sunt nisi sit.</h1>
-                <p class="my-1">
-                    Nisi pariatur et elit quis consequat nulla est ex eiusmod velit minim. Ad labore eiusmod excepteur irure nulla. Officia sunt ut ullamco occaecat consectetur. Ullamco enim labore sint cupidatat irure tempor sit nulla velit.
-                </p>
-                <a href="#" class="btn-primary">Learn More</a>
-                <a href="#" class="btn-secondary">Sign Up</a>
+                <h1 id = "demo">Can't detect this screen width.</h1>
+                
+                
+                <h3 class="my-1">
+                    These products came from:
+                    <a href="http://fakestoreapi.com"><span>fakestoreapi.com</span></a> .
+                </h3>
+                <div id = "cta">
+                <a href="#" class="btn-primary">Nothing</a>
+                <a href="#" class="btn-secondary">Also nothing</a>
+                </div>
             </div>
-            <img id = "hero" src="https://the7eagles.com/wp-content/uploads/2022/02/web-development-image-01.png"/>
+            
         </div>
-      
-    </div>
-    <div id = "showcaseProducts">
-        <div id = "products">           
-            <!--All Products goes here-->
-        </div>
-
+        
     </div>
 </header>
 
+<div id = "showcaseProducts">
+           
+    <div id = "products">           
+        <!--All Products goes here-->
+    </div>
     
+</div>
+
+
+
+
+<script src = "js/screenSize.js"> </script>
 </body>
 </html>

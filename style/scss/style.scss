@@ -26,15 +26,32 @@ a {
   text-decoration: none;
 }
 
+span{
+  color: rgb(253, 250, 84);
+}
+
 .showcase {
+  
+
   @include set-background($primary-color);
-  height: 550px;
+  //height: 550px;
   #hero{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     z-index: 1;
     margin-top: 20px;
   }
+
+
+ #cta{
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-bottom: 20px;
+ }
+
 
   nav {
     display: flex;
@@ -76,5 +93,40 @@ a {
     }
   }
 }
+
+//
+@media (min-width : 0px) {
+  #hero {
+    width: 0px;
+  }
+
+  }
+@media (min-width : 437px) {
+  #hero {
+    width: 0px;
+  }
+
+  }
+//
+@media (min-width : 632px) {
+  #hero {
+    width:  200px;
+  }
+
+  }
+
+  @media (min-width : 638px) {
+    #hero {
+      width:  280px;
+    }
+  
+    }
+  @media (min-width : 347px) {
+    .container {
+     height:  fit-content;
+    }
+  
+    }
+
 
 

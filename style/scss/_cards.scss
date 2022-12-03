@@ -83,7 +83,7 @@
 
     .price {
         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        @include price(15px, 25px);
     }
 }
 
@@ -105,8 +105,8 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
@@ -142,7 +142,7 @@
 
     .price {
         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        @include price(15px, 25px);
     }
 }
 
@@ -164,8 +164,8 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
@@ -188,8 +188,8 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
@@ -213,18 +213,19 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
+
 //===================
 @media (min-width : 600px) {
 
     .itemContainer {
         //@mixin itemContainer ($margin, $width, $height)
         @include itemContainer(20px 10px 0px 10px, 45vw, 50vw);
-      
+
     }
 
     .thumbnail {
@@ -238,18 +239,19 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
+
 //===================
 @media (min-width : 1280px) {
 
     .itemContainer {
         //@mixin itemContainer ($margin, $width, $height)
         @include itemContainer(20px 10px 0px 10px, 20vw, 30vw);
-      
+
     }
 
     .thumbnail {
@@ -263,18 +265,19 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
+
 //===================
 @media (min-width : 1366px) {
 
     .itemContainer {
         //@mixin itemContainer ($margin, $width, $height)
         @include itemContainer(20px 10px 0px 10px, 20vw, 25vw);
-      
+
     }
 
     .thumbnail {
@@ -288,18 +291,19 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
+
 //===================
 @media (min-width : 1920px) {
 
     .itemContainer {
         //@mixin itemContainer ($margin, $width, $height)
         @include itemContainer(20px 10px 0px 10px, 15vw, 22vw);
-      
+
     }
 
     .thumbnail {
@@ -313,18 +317,19 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }
+
 //===================
 @media (min-width : 2560px) {
 
     .itemContainer {
         //@mixin itemContainer ($margin, $width, $height)
         @include itemContainer(20px 10px 0px 10px, 10vw, 15vw);
-      
+
     }
 
     .thumbnail {
@@ -338,8 +343,8 @@
     }
 
     .price {
-         //@mixin price ($padding, $fontSize)
-        @include price(15px,25px);
+        //@mixin price ($padding, $fontSize)
+        @include price(15px, 25px);
 
     }
 }

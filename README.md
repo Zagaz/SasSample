@@ -2,8 +2,8 @@
 
 The goal here is to demonstrate my skills using:
 
-* Use API's.
-* Use SASS for Styling and Responsivity (Media queries);
+* Using API's.
+* Using SASS for Styling and Responsivity (Media queries);
 * Flexbox;
 * Vanilla JavaScript;
 

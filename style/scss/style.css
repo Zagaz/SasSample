@@ -96,20 +96,21 @@
 }
 
 .btn-primary {
-  background-color: #418bff;
+  background-color: #417ae3;
   color: #fff;
 }
 
 .btn-secondary {
-  background-color: #ff8700;
+  background-color: #2FDFCC;
   color: #fff;
 }
 
 #showcaseProducts {
   width: 100%;
-  background-color: aqua;
+  background-color: #1F5ED2;
   background-image: "assets/images/hero.png";
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -395,7 +396,7 @@ span {
 }
 
 .showcase {
-  background-color: #0e6cff;
+  background-color: #1F5ED2;
   color: #fff;
 }
 .showcase #hero {
@@ -427,7 +428,7 @@ span {
   color: #fff;
 }
 .showcase nav a:hover {
-  color: #ff8700;
+  color: #2FDFCC;
 }
 .showcase-content {
   height: 100%;

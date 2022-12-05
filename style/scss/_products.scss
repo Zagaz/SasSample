@@ -1,9 +1,10 @@
 #showcaseProducts {
 
     width: 100%;
-    background-color: aqua;
+    background-color: #1F5ED2;
     background-image: "assets/images/hero.png";
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
